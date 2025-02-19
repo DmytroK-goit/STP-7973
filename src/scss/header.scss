@@ -74,3 +74,69 @@
 .mob-menu {
   display: none;
 }
+
+// mob-menu
+.mob-menu-burg {
+  display: block;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 280px;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  transition: right 0.4s ease-in-out;
+  z-index: 1000;
+
+  &.active {
+    right: 32%;
+  }
+
+  @include media(desktop) {
+    display: none;
+  }
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  .header-ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    li {
+      text-align: center;
+
+      a {
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+        transition: 0.3s;
+
+        &:hover {
+          color: #ffd700;
+        }
+      }
+    }
+  }
+}
