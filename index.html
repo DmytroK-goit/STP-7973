@@ -13,35 +13,75 @@
     rel="stylesheet">
   
   <script type="module" crossorigin src="/stp-7973/commonHelpers2.js"></script>
-  <link rel="stylesheet" href="/stp-7973/assets/styles-09a27460.css">
+  <link rel="stylesheet" href="/stp-7973/assets/styles-ed60ba57.css">
 </head>
 
 <body>
   <header class="header">
+  <a class="logo" href="/"><img src="../img/logo.png" width="61" height="60" alt="logo"></a>
   <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
+    <ul class="header-ul">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#about">About the Game</a></li>
+      <li><a href="#how-to-use">How to Use</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#gallery">Gallery</a></li>
     </ul>
+    <button type="button" class="mob-menu" aria-label="close-menu">
+      <svg class="burger-svg" width="28" height="28">
+        <use href="/src/img/sprite.svg#icon-menu"></use>
+      </svg>
+    </button>
   </nav>
+  <div class="mob-menu">
+    <button type="button" class="mob-menu" aria-label="close-menu">
+      <svg class="burger-svg" width="28" height="28">
+        <use href="../img/sprite.svg#icon-menu"></use>
+      </svg>
+    </button>
+    <nav class="nav">
+      <ul class="header-ul">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#about">About the Game</a></li>
+        <li><a href="#how-to-use">How to Use</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
-
   <main>
     <section class="section-home" id="home">
-    <h1>Spark Art - Ignite Your Creativity!</h1>
-    <a class="google-play"
-        href="https://play.google.com/store/apps/details?id=com.gameloft.android.ANMP.GloftA9HM&pcampaignid=merch_published_cluster_promotion_battlestar_browse_all_games&hl=ru"
+    <h1 class="hero"><span class="hero-span">Spark Art - </span><br>
+        Ignite Your Creativity!</h1>
+    <a class="google-play" href="https://play.google.com/store/apps/details?id=com.bigduckgames.sparkart&hl=en&gl=us"
         target="_blank">
-        <p>Get it on
+        <img src="../img/logos_google-play-icon.png" alt="">
+        <p class="parag"><span>Get it on</span>
             Google Play</p>
     </a>
 
+
+
 </section>
+<div class="block-paragraph">
+    <p>Unleash your inner artist with <span class="block-span">Spark Art!</span><br>
+        Dive into a world of creativity where colors come to life
+        and every touch creates a masterpiece. Whether you're a seasoned artist or just looking for a relaxing way
+        to express yourself, Spark Art offers endless possibilities</p>
+    <p>Explore mesmerizing patterns, dynamic brushes, and a vast color palette to craft stunning digital artwork.
+        Let your imagination run wild and turn every canvas into a spark of inspiration!</p>
+</div>
+<a class="google-play-phone" href="https://play.google.com/store/apps/details?id=com.bigduckgames.sparkart&hl=en&gl=us"
+    target="_blank">
+    <img src="../img/logos_google-play-icon.png" alt="">
+    <p class="parag"><span>Get it on</span>
+        Google Play</p>
+</a>
     <section class="section-benefits" id="benefits">
     <p>benefits</p>
 </section>
@@ -106,7 +146,7 @@
     <a class="section-gallery__link" href="#">
       <svg width="24" height="24">
         <use
-          href="./img/sprite.svg#icon-bi_grid-1x2"
+          href="/stp-7973/assets/sprite-99931d61.svg#icon-bi_grid-1x2"
           width="24"
           height="24"
         ></use>
