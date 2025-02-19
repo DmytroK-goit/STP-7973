@@ -1,16 +1,145 @@
 .section-home {
-  width: 1200px;
-  height: 989px;
-  background-image: url(../img//homeiPhone15Pro.jpg);
+  width: 320px;
+  height: 384px;
+  background-image: url(../img/iPhone15Promob.jpg);
+  background-repeat: no-repeat;
+  margin-top: 40px;
+  @include media(desktop) {
+    margin-top: 0;
+    width: 1200px;
+    height: 989px;
+    background-image: url(../img/homeiPhone15Pro.jpg);
+  }
 }
 .google-play {
+  display: none;
+
+  @include media(desktop) {
+    border-radius: 12px;
+    padding: 10px 46px;
+    width: 281px;
+    height: 44px;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1c1c1c;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #1c1c1c;
+    padding: 20px 39px;
+    width: 403px;
+    height: 80px;
+    font-size: 20px;
+    color: #1c1c1c;
+    gap: 24px;
+    margin-top: 200px;
+    margin-left: 100px;
+  }
+}
+.parag {
+  display: block;
+
+  @include media(desktop) {
+    width: 110px;
+  }
+}
+.google-play img {
+  width: 24px;
+  height: 24px;
+  @include media(desktop) {
+    width: 40px;
+    height: 44px;
+  }
+}
+.hero {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #fff;
+  padding-top: 58px;
+  margin-left: 20px;
+  @include media(desktop) {
+    width: 733px;
+
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 1.125;
+    padding-top: 140px;
+    margin-left: 100px;
+  }
+}
+.hero-span {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #ffec42;
+  @include media(desktop) {
+    font-size: 64px;
+    line-height: 1.125;
+  }
+}
+
+.block-paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 280px;
+  height: 372px;
+  margin-top: 15px;
+  margin: 0 auto;
+  @include media(desktop) {
+    margin-left: 100px;
+    width: 744px;
+    height: 330px;
+    margin-top: 60px;
+  }
+}
+.block-paragraph p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  @include media(desktop) {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+}
+.block-span {
+  font-family: var(--second-family);
+  color: #ffec42;
+  @include media(desktop) {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+}
+
+.google-play-phone {
   border-radius: 12px;
-  padding: 20px 39px;
-  width: 403px;
-  height: 80px;
+  padding: 10px 46px;
+  width: 281px;
+  height: 44px;
   background-color: #efefef;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #1c1c1c;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 auto;
+  @include media(desktop) {
+    display: none;
+  }
+}
+.google-play-phone img {
+  width: 24px;
+  height: 24px;
+  @include media(desktop) {
+    width: 40px;
+    height: 44px;
+  }
 }
