@@ -11,18 +11,19 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = '';
   };
 
-  setTimeout(() => {
-    cookiesBlock.classList.add('active');
-    blockScroll();
-  }, 500);
+  if (!localStorage.getItem('cookiesAccepted')) {
+    setTimeout(() => {
+      cookiesBlock.classList.add('active');
+      blockScroll();
+    }, 500);
+  }
 
-  acceptBtn.addEventListener('click', () => {
+  const hideCookiesBanner = () => {
     cookiesBlock.classList.remove('active');
     allowScroll();
-  });
+    localStorage.setItem('cookiesAccepted', 'true');
+  };
 
-  declineBtn.addEventListener('click', () => {
-    cookiesBlock.classList.remove('active');
-    allowScroll();
-  });
+  acceptBtn.addEventListener('click', hideCookiesBanner);
+  declineBtn.addEventListener('click', hideCookiesBanner);
 });
