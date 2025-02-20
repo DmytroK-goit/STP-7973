@@ -15,7 +15,19 @@
   <body>
     <section>
       <div class="privacy-policy-wrap">
-        <a class="privacy-policy-link" href="./index.html">Back</a>
+        <a class="privacy-policy-link" href="./index.html"><picture class="privacy-policy-btn-pic">
+          <source
+            srcset="img/arrow_2x.png"
+            media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+          />
+          <img
+            src="img/arrow.png"
+            alt="Arrow"
+            class="privacy-policy-btn-img"
+            width="40"
+            height="40"
+          />
+        </picture><span class="privacy-policy-back">Back</span></a>
         <h2 class="privacy-policy-title">Privacy Policy</h2>
         <p class="privacy-policy-text">
           This privacy policy applies to the Spark Art app (hereby referred to as
@@ -73,9 +85,9 @@
           Application:
         </p>
         <ul class="privacy-policy-list">
-          <li class="privacy-policy-item-under">Google Play Services</li>
-          <li class="privacy-policy-item-under">Google Analytics for Firebase</li>
-          <li class="privacy-policy-item-under">Facebook</li>
+          <li class="privacy-policy-item-under"><a target="_blank" href="https://policies.google.com/privacy">Google Play Services</a></li>
+          <li class="privacy-policy-item-under"><a target="_blank" href="https://firebase.google.com/support/privacy">Google Analytics for Firebase</a></li>
+          <li class="privacy-policy-item-under"><a target="_blank" href="https://www.facebook.com/about/privacy/update/printable">Facebook</a></li>
         </ul>
         <p class="privacy-policy-text">
           The Service Provider may disclose User Provided and Automatically
@@ -158,7 +170,6 @@
           Provider via email at info@sparktrailway.com.
         </p>
       </section>
-      </main>
     <footer>
       <load ="partials/footer.html" />
     </footer>
