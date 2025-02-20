@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   const menuBtn = document.querySelector('.mob-menu-burg');
   const mobileMenu = document.querySelector('.mob-menu');
-  const closeBtn = mobileMenu.querySelector('button.mob-menu');
+  const closeBtn = mobileMenu.querySelector('.mob-menu-cloth');
+  const menuLinks = mobileMenu.querySelectorAll('.header-ul-mob a');
 
   const openMenu = () => {
     mobileMenu.classList.add('active');
@@ -26,5 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (event.key === 'Escape') {
       closeMenu();
     }
+  });
+
+  menuLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
   });
 });
