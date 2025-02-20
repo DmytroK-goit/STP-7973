@@ -81,6 +81,7 @@
   justify-content: space-between;
   align-items: center;
   @include media(desktop) {
+    background-image: url(../img/benefits/sec0ndDesktop.png);
     width: 265px;
     height: 206px;
   }
@@ -105,6 +106,7 @@
   justify-content: space-between;
   align-items: center;
   @include media(desktop) {
+    background-image: url(../img/benefits/thirdDesktop.png);
     width: 233px;
     height: 206px;
   }
@@ -129,6 +131,7 @@
   justify-content: space-between;
   align-items: center;
   @include media(desktop) {
+    background-image: url(../img/benefits/f0rthDesktop.png);
     width: 233px;
     height: 206px;
   }
@@ -153,6 +156,7 @@
   justify-content: space-between;
   align-items: center;
   @include media(desktop) {
+    background-image: url(../img/benefits/fifthDesktop.png);
     width: 233px;
     height: 206px;
   }
