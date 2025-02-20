@@ -22,7 +22,7 @@
 .benefits-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 20px 16px;
   list-style: none;
   padding: 0;
   justify-items: center;
@@ -32,34 +32,169 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 8px;
+    width: 132px;
 
     &:nth-last-child(1):nth-child(odd) {
       grid-column: span 2;
       justify-self: center;
     }
+    @include media(desktop) {
+      width: 418px;
+    }
   }
 }
+// benefits 1 item
 .benefits-img-first {
-  width: 300px;
-  height: 150px;
+  width: 100%;
+  height: 140px;
   background-image: url(../img/benefits/first.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  border: none;
-  border-radius: 50%;
+  @include media(desktop) {
+    background-image: url(../img/benefits/firstDesktot.png);
+    width: 233px;
+    height: 206px;
+  }
 }
 .benefits-img-first img {
   width: 100px;
   height: 100px;
   object-fit: cover;
+  @include media(desktop) {
+  }
 }
+// benefits 2 item
+.benefits-img-second {
+  width: 100%;
+  background-image: url(../img/benefits/sec0nd.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  @include media(desktop) {
+    background-image: url(../img/benefits/sec0ndDesktop.png);
+    width: 265px;
+    height: 206px;
+  }
+}
+.benefits-img-second img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  @include media(desktop) {
+  }
+}
+// benefits 3 item
+.benefits-img-third {
+  width: 100%;
+  height: 140px;
+  background-image: url(../img/benefits/third.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  @include media(desktop) {
+    background-image: url(../img/benefits/thirdDesktop.png);
+    width: 233px;
+    height: 206px;
+  }
+}
+.benefits-img-third img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  @include media(desktop) {
+  }
+}
+// benefits 4 item
+.benefits-img-forth {
+  width: 100%;
+  height: 140px;
+  background-image: url(../img/benefits/f0rth.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  @include media(desktop) {
+    background-image: url(../img/benefits/f0rthDesktop.png);
+    width: 233px;
+    height: 206px;
+  }
+}
+.benefits-img-forth img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  @include media(desktop) {
+  }
+}
+// benefits 5 item
+.benefits-img-fifth {
+  width: 100%;
+  height: 140px;
+  background-image: url(../img/benefits/fifth.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  @include media(desktop) {
+    background-image: url(../img/benefits/fifthDesktop.png);
+    width: 233px;
+    height: 206px;
+  }
+}
+.benefits-img-fifth img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  @include media(desktop) {
+  }
+}
+
 .benefits-item-hero {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   color: #ffec42;
+  text-align: center;
+  @include media(desktop) {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+}
+.benefits-item-paragraph {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  @include media(desktop) {
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+  }
+}
+.grid-item img {
+  @include media(desktop) {
+    width: 150px;
+    height: 150px;
+  }
 }
