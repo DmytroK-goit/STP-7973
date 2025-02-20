@@ -161,7 +161,7 @@
   margin: 0 auto;
 
   &.active {
-    bottom: 50%;
+    bottom: 30%;
   }
   @include media(desktop) {
     width: 100%;
