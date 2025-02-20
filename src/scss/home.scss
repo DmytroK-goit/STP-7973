@@ -15,29 +15,33 @@
   display: none;
 
   @include media(desktop) {
-    border-radius: 12px;
-    padding: 10px 46px;
-    width: 281px;
-    height: 44px;
-    background-color: #efefef;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #1c1c1c;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.5;
-    color: #1c1c1c;
+    border-radius: 12px;
     padding: 20px 39px;
     width: 403px;
     height: 80px;
-    font-size: 20px;
+    background-color: #efefef;
     color: #1c1c1c;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
     gap: 24px;
     margin-top: 200px;
     margin-left: 100px;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #7a8cdc;
+    }
+
+    &:active {
+      background-color: #402a86;
+    }
   }
 }
+
 .parag {
   display: block;
 
@@ -126,11 +130,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 8px;
   color: #1c1c1c;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
   margin: 0 auto;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #7a8cdc;
+  }
+
+  &:active {
+    background-color: #402a86;
+  }
   @include media(desktop) {
     display: none;
   }
