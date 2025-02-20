@@ -5,7 +5,10 @@
   font-size: 12px;
   line-height: 150%;
   color: #ffffff;
-  padding: 40px 20px 20px 20px;
+  padding: 40px 20px 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .privacy-policy-link {
@@ -14,13 +17,23 @@
   width: 280px;
   height: 50px;
   background-color: #efefef;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.privacy-policy-back {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
   color: #1c1c1c;
-  margin-bottom: 24px;
-  display: flex;
+}
+
+.privacy-policy-list {
+  padding-left: 30px;
+  list-style: disc;
 }
 
 .privacy-policy-title {
@@ -29,7 +42,7 @@
   font-size: 24px;
   line-height: 150%;
   color: #ffec42;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   text-align: center;
 }
 
@@ -39,6 +52,7 @@
   font-size: 12px;
   line-height: 150%;
   color: #ffffff;
+  max-width: 93%;
 }
 
 .privacy-policy-small-title {
@@ -62,4 +76,48 @@
   color: #ffffff;
   text-decoration: underline;
   text-decoration-skip-ink: none;
+}
+
+@include media(desktop) {
+  .privacy-policy-wrap {
+    width: 1200px;
+    padding: 60px 100px;
+    gap: 24px;
+    flex-direction: column;
+  }
+  .privacy-policy-btn-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 36px;
+  }
+  .privacy-policy-item {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .privacy-policy-item-under {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .privacy-policy-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 400;
+    font-size: 36px;
+  }
+  .privacy-policy-link {
+    width: 232px;
+    height: 50px;
+  }
+  .privacy-policy-text {
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 94%;
+  }
+  .privacy-policy-small-title {
+    font-weight: 400;
+    font-size: 24px;
+  }
 }

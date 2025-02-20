@@ -1,0 +1,122 @@
+.terms-conditions-wrap {
+  width: 320px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #ffffff;
+  padding: 40px 20px 96px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.terms-conditions-link {
+  border-radius: 12px;
+  padding: 5px 46px;
+  width: 280px;
+  height: 50px;
+  background-color: #efefef;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.terms-conditions-back {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1c1c1c;
+}
+
+.terms-conditions-list {
+  list-style: disc;
+  padding-left: 30px;
+}
+
+.terms-conditions-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #ffec42;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.terms-conditions-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.terms-conditions-middle-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 112%;
+  color: #34a853;
+}
+
+.terms-conditions-small-title {
+  font-size: 14px;
+  color: #ffec42;
+}
+
+.terms-conditions-text-under {
+  text-decoration: underline;
+}
+
+.terms-conditions-item {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+@include media(desktop) {
+  .terms-conditions-wrap {
+    width: 1200px;
+    padding: 60px 100px;
+    gap: 24px;
+  }
+  .terms-conditions-btn-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 36px;
+  }
+  .terms-conditions-item {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .terms-conditions-item-under {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .terms-conditions-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 400;
+    font-size: 36px;
+  }
+  .terms-conditions-link {
+    width: 232px;
+    height: 50px;
+  }
+  .terms-conditions-text {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .terms-conditions-small-title {
+    font-weight: 400;
+    font-size: 24px;
+  }
+}
