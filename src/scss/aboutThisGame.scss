@@ -6,13 +6,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(/img/about/BGmob.png);
+  background-image: image-set(
+    url('../img/about/BGmob.png') 1x,
+    url('../img/about/BGmob2x.png') 2x
+  );
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
   box-sizing: content-box;
   @include media(desktop) {
-    background-image: url(/img/benefits/BGabout.png);
+    background-image: image-set(
+      url('../img/about/BGabout.png') 1x,
+      url('../img/about/BG2x.png') 2x
+    );
     background-size: 100% 100%;
     margin-top: 60px;
     width: 1200px;
@@ -70,16 +76,12 @@
 .about-img-first {
   width: 100%;
   height: 100%;
-  // background-image: url(../img/about/bgm0bfirst.png);
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: cover;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   @include media(desktop) {
-    // background-image: url(../img/about/bgdeskfirst.png);
     width: 233px;
     height: 206px;
   }
@@ -87,16 +89,12 @@
 .about-img-second {
   width: 100%;
   height: 100%;
-  // background-image: url(../img/about/bgm0bsec0nd.png);
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: cover;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   @include media(desktop) {
-    // background-image: url(../img/about/bgdesksec0nd.png);
     width: 233px;
     height: 206px;
   }
@@ -104,53 +102,57 @@
 .about-img-third {
   width: 100%;
   height: 100%;
-  // background-image: url(../img/about/bgm0bthird.png);
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: cover;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   @include media(desktop) {
-    // background-image: url(../img/about//bgdeskthird.png);
     width: 233px;
     height: 206px;
   }
 }
 .about-list-li-first {
-  background-image: url(/img/about/bgm0bfirst.png);
+  background-image: image-set(
+    url('/img/about/bgdeskfirst.png') 1x,
+    url('/img/about/bgdeskfirst2x.png') 2x
+  );
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
   display: flex;
   align-items: center;
   @include media(desktop) {
-    background-image: url(/img/about/bgdeskfirst.png);
+    width: 1000px;
     background-position: right;
     background-size: contain;
   }
 }
 .about-list-li-sec0nd {
-  background-image: url(/img/about/bgm0bsec0nd.png);
+  background-image: image-set(
+    url('/img/about/bgdesksec0nd.png') 1x,
+    url('/img/about/bgdesksec0nd2x.png') 2x
+  );
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
 
   @include media(desktop) {
-    background-image: url(/img/about/bgdesksec0nd.png);
     background-position: right;
     background-size: contain;
   }
 }
 .about-list-li-third {
-  background-image: url(/img/about/bgm0bthird.png);
+  background-image: image-set(
+    url('/img/about/bgdeskthird.png') 1x,
+    url('/img/about/bgdeskthird2x.png') 2x
+  );
+
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
 
   @include media(desktop) {
-    background-image: url(/img/about//bgdeskthird.png);
     background-position: right;
     background-size: contain;
   }
@@ -158,4 +160,21 @@
 .about-list img {
   width: 150px;
   height: 150px;
+}
+.about-list p {
+  @include media(desktop) {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 744px;
+  }
+}
+.spark {
+  font-family: var(--second-family);
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ffec42;
+  @include media(desktop) {
+    font-size: 24px;
+  }
 }
