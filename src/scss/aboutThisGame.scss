@@ -115,36 +115,36 @@
   }
 }
 .about-list-li-first {
-  background-image: url(../img/about/bgm0bfirst.png);
+  background-image: url(/img/about/bgm0bfirst.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
   @include media(desktop) {
-    background-image: url(../img/about/bgdeskfirst.png);
+    background-image: url(/img/about/bgdeskfirst.png);
     background-position: right;
     background-size: contain;
   }
 }
 .about-list-li-sec0nd {
-  background-image: url(../img/about/bgm0bsec0nd.png);
+  background-image: url(/img/about/bgm0bsec0nd.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
 
   @include media(desktop) {
-    background-image: url(../img/about/bgdesksec0nd.png);
+    background-image: url(/img/about/bgdesksec0nd.png);
     background-position: right;
     background-size: contain;
   }
 }
 .about-list-li-third {
-  background-image: url(../img/about/bgm0bthird.png);
+  background-image: url(/img/about/bgm0bthird.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
 
   @include media(desktop) {
-    background-image: url(../img/about//bgdeskthird.png);
+    background-image: url(/img/about//bgdeskthird.png);
     background-position: right;
     background-size: contain;
   }
