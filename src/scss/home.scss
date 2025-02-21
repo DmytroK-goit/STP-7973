@@ -19,7 +19,6 @@
 }
 .google-play {
   display: none;
-
   @include media(desktop) {
     display: flex;
     justify-content: center;

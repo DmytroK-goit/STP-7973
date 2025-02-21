@@ -163,10 +163,10 @@
 }
 .about-list p {
   @include media(desktop) {
-    display: inline-block;
+    display: block;
     align-items: center;
-    justify-content: center;
     width: 744px;
+    height: 110px;
   }
 }
 .spark {
