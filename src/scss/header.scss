@@ -70,13 +70,6 @@
   font-size: 16px;
   line-height: 1.5;
   color: #1c1c1c;
-  position: relative;
-  padding-bottom: 10px;
-}
-
-.header-ul a:hover {
-  font-weight: 600;
-  box-shadow: inset 0px -4px 0px #ffec42;
 }
 .mob-menu {
   display: none;
@@ -100,21 +93,11 @@
   height: 100vh;
   background-color: #1c1c1c;
   box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
-  background-image: image-set(
-      url('/img/mobMenu/salute1x.png') 1x,
-      url('/img/mobMenu/salute2x.png') 2x
-    ),
-    image-set(
-      url('/img/mobMenu/hart1x.png') 1x,
-      url('/img/mobMenu/hart2x.png') 2x
-    );
-  background-repeat: no-repeat, no-repeat;
-  background-position: top center, bottom center;
-  background-size: contain, contain;
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+
   gap: 20px;
   transition: right 0.4s ease-in-out;
   z-index: 1000;

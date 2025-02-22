@@ -1,0 +1,110 @@
+.section-reviews {
+  scroll-margin-top: 100px;
+  padding: 0 20px 46px 20px;
+  width: 320px;
+  position: relative;
+  overflow: visible;
+}
+
+.section-reviews__title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #ffec42;
+  margin-bottom: 46px;
+  text-align: center;
+}
+
+.section-reviews__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section-reviews__item {
+  width: 280px;
+  position: relative;
+  overflow: visible;
+}
+
+.section-reviews__name-wrap {
+  display: flex;
+  align-items: center;
+  background-color: #b4ccf3;
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+  position: relative;
+  overflow: visible;
+  padding-bottom: 10px;
+}
+
+.section-reviews__picture img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  stroke-width: 5px;
+  stroke: #1c1c1c;
+  position: absolute;
+  top: -40%;
+  overflow: visible;
+}
+
+.section-reviews__name-stars {
+  display: flex;
+  flex-direction: column;
+  padding-left: 72px;
+  padding-top: 12px;
+  gap: 8px;
+}
+
+.section-reviews__name {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  color: #1c1c1c;
+  text-align: center;
+}
+
+.section-reviews__stars-wrap {
+  display: flex;
+}
+
+.section-reviews__star-yellow img {
+  width: 22px;
+  height: 22px;
+}
+
+.section-reviews__item-text {
+  background-color: #ffffff;
+  border-radius: 0 0 12px 12px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #1c1c1c;
+  padding: 20px 20px 37px 20px;
+}
+
+/* Стилі для мобільної версії (Swiper) */
+.section-reviews__mobile {
+  display: block;
+}
+
+.section-reviews__desktop {
+  display: none;
+}
+
+/* Стилі для десктопної версії */
+@media (min-width: 1200px) {
+  .section-reviews__mobile {
+    display: none;
+  }
+
+  .section-reviews__desktop {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
+}

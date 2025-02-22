@@ -1,24 +1,19 @@
 .section-home {
   width: 320px;
   height: 384px;
-  background-image: image-set(
-    url('/img/iPhone15Promob.jpg') 1x,
-    url('/img/iPhone15Promob2x.jpg') 2x
-  );
+  background-image: url(../img/iPhone15Promob.jpg);
   background-repeat: no-repeat;
   margin-top: 40px;
   @include media(desktop) {
     margin-top: 0;
     width: 1200px;
     height: 989px;
-    background-image: image-set(
-      url('/img/homeiPhone15Pro.jpg') 1x,
-      url('/img/homeiPhone15Pro2х.jpg') 2x
-    );
+    background-image: url(../img/homeiPhone15Pro.jpg);
   }
 }
 .google-play {
   display: none;
+
   @include media(desktop) {
     display: flex;
     justify-content: center;
