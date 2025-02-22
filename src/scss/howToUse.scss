@@ -2,7 +2,21 @@
   scroll-margin-top: 100px;
   margin-top: 10px;
   width: 320px;
+  background-image: image-set(
+    url('../img/hovToUse/saluteMob1x.png') 1x,
+    url('../img/hovToUse/saluteMob2x.png') 2x
+  );
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: contain;
   @include media(desktop) {
+    background-image: image-set(
+      url('../img/hovToUse/saluteDesk1x.png') 1x,
+      url('../img/hovToUse/saluteDesk2x.png') 2x
+    );
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: contain;
     margin-top: 20px;
     width: 1200px;
   }
