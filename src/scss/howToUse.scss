@@ -1,0 +1,68 @@
+.section-how-to-use {
+  scroll-margin-top: 100px;
+  margin-top: 40px;
+  width: 320px;
+  @include media(desktop) {
+    margin-top: 60px;
+    width: 1200px;
+  }
+}
+
+.how-to-use-hero {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #ffec42;
+  text-align: center;
+  @include media(desktop) {
+    font-size: 64px;
+    line-height: 112%;
+    margin-bottom: 60px;
+  }
+}
+ol {
+  counter-reset: custom-counter;
+}
+
+ol li {
+  list-style: none;
+  position: relative;
+  padding-left: 85px;
+  display: flex;
+  align-items: center;
+}
+
+ol li::before {
+  content: counter(custom-counter);
+  counter-increment: custom-counter;
+  position: relative;
+  left: 0;
+  top: 0;
+  background-color: #ffec42;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #1c1c1c;
+  z-index: 0;
+}
+.how-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.how-list p {
+  font-size: 12px;
+  line-height: 1.5;
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}

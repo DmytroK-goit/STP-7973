@@ -5,6 +5,13 @@
   @include media(desktop) {
     margin-top: 60px;
     width: 1200px;
+    background-image: image-set(
+      url('../img/benefits/salute1x.png') 1x,
+      url('../img/benefits/salute2x.png') 2x
+    );
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
   }
 }
 .benefits-hero {
@@ -17,6 +24,7 @@
   @include media(desktop) {
     font-size: 64px;
     line-height: 112%;
+    margin-bottom: 60px;
   }
 }
 .benefits-list {
@@ -72,6 +80,7 @@
 // benefits 2 item
 .benefits-img-second {
   width: 100%;
+
   background-image: url(../img/benefits/sec0nd.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -83,7 +92,7 @@
   @include media(desktop) {
     background-image: url(../img/benefits/sec0ndDesktop.png);
     width: 265px;
-    height: 206px;
+    height: 214px;
   }
 }
 .benefits-img-second img {
