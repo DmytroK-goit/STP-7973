@@ -1,9 +1,9 @@
 .section-how-to-use {
   scroll-margin-top: 100px;
-  margin-top: 40px;
+  margin-top: 10px;
   width: 320px;
   @include media(desktop) {
-    margin-top: 60px;
+    margin-top: 20px;
     width: 1200px;
   }
 }
@@ -21,24 +21,29 @@
     margin-bottom: 60px;
   }
 }
+
 ol {
   counter-reset: custom-counter;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
 }
 
 ol li {
   list-style: none;
-  position: relative;
-  padding-left: 85px;
   display: flex;
   align-items: center;
+  gap: 20px;
+  width: 279px;
+  @include media(desktop) {
+    width: 658px;
+  }
 }
 
 ol li::before {
   content: counter(custom-counter);
   counter-increment: custom-counter;
-  position: relative;
-  left: 0;
-  top: 0;
   background-color: #ffec42;
   border-radius: 50%;
   width: 60px;
@@ -50,19 +55,54 @@ ol li::before {
   font-size: 24px;
   line-height: 1.5;
   color: #1c1c1c;
-  z-index: 0;
+  flex-shrink: 0;
 }
+
 .how-list {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  justify-content: center;
   align-items: center;
 }
+
 .how-list p {
   font-size: 12px;
   line-height: 1.5;
   @include media(desktop) {
     font-size: 24px;
   }
+}
+
+%text-style {
+  font-size: 12px;
+  line-height: 150%;
+  font-family: var(--second-family);
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.first-span {
+  @extend %text-style;
+  color: #42f2ff;
+}
+
+.sec-span {
+  @extend %text-style;
+  color: #ff42e6;
+}
+
+.third-span {
+  @extend %text-style;
+  color: #4285f4;
+}
+
+.forth-span {
+  @extend %text-style;
+  color: #34a853;
+}
+
+.fifth-span {
+  @extend %text-style;
+  color: #ea4335;
 }
