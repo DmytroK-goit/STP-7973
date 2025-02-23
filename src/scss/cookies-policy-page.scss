@@ -23,12 +23,42 @@
   gap: 32px;
 }
 
+.cookies-policy-link:hover,
+.cookies-policy-link:focus {
+  background-color: #7a8cdc;
+}
+
+.cookies-policy-link:active {
+  background-color: #402a86;
+}
+
 .cookies-policy-back {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
   color: #1c1c1c;
+}
+
+.cookies-policy-link:hover,
+.cookies-policy-link:focus {
+  background-color: #7a8cdc;
+}
+
+.cookies-policy-link:active {
+  background-color: #402a86;
+}
+
+.cookies-policy-link:hover .cookies-policy-btn-img,
+.cookies-policy-link:focus .cookies-policy-btn-img,
+.cookies-policy-link:active .cookies-policy-btn-img {
+  filter: invert(1);
+}
+
+.cookies-policy-link:hover .cookies-policy-back,
+.cookies-policy-link:focus .cookies-policy-back,
+.cookies-policy-link:active .cookies-policy-back {
+  color: white;
 }
 
 .cookies-policy-title {

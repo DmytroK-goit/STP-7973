@@ -23,6 +23,27 @@
   gap: 32px;
 }
 
+.privacy-policy-link:hover,
+.privacy-policy-link:focus {
+  background-color: #7a8cdc;
+}
+
+.privacy-policy-link:active {
+  background-color: #402a86;
+}
+
+.privacy-policy-link:hover .privacy-policy-btn-img,
+.privacy-policy-link:focus .privacy-policy-btn-img,
+.privacy-policy-link:active .privacy-policy-btn-img {
+  filter: invert(1);
+}
+
+.privacy-policy-link:hover .privacy-policy-back,
+.privacy-policy-link:focus .privacy-policy-back,
+.privacy-policy-link:active .privacy-policy-back {
+  color: white;
+}
+
 .privacy-policy-back {
   font-family: var(--font-family);
   font-weight: 400;
