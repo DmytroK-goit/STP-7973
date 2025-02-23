@@ -23,6 +23,27 @@
   gap: 32px;
 }
 
+.terms-conditions-link:hover,
+.terms-conditions-link:focus {
+  background-color: #7a8cdc;
+}
+
+.terms-conditions-link:active {
+  background-color: #402a86;
+}
+
+.terms-conditions-link:hover .terms-conditions-btn-img,
+.terms-conditions-link:focus .terms-conditions-btn-img,
+.terms-conditions-link:active .terms-conditions-btn-img {
+  filter: invert(1);
+}
+
+.terms-conditions-link:hover .terms-conditions-back,
+.terms-conditions-link:focus .terms-conditions-back,
+.terms-conditions-link:active .terms-conditions-back {
+  color: white;
+}
+
 .terms-conditions-back {
   font-family: var(--font-family);
   font-weight: 400;
