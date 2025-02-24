@@ -4,6 +4,7 @@
   position: fixed;
   top: 12px;
   left: 50;
+  z-index: 1010;
   @include media(desktop) {
     gap: 24px;
     top: 20px;
