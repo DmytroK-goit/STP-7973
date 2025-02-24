@@ -9,6 +9,39 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-cookies__blue-salute {
+  position: absolute;
+  left: -32.5%;
+  top: 22%;
+  width: 530px;
+  height: 477px;
+  overflow: hidden;
+}
+.section-cookies__red-salute {
+  position: absolute;
+  left: 32%;
+  top: 54%;
+  width: 530px;
+  height: 477px;
+  overflow: hidden;
+}
+
+.section-cookies__blue-salute-img {
+  width: 530px;
+  height: 477px;
+  display: block;
+  object-fit: cover;
+}
+
+.section-cookies__red-salute-img {
+  width: 419px;
+  height: 419px;
+  display: block;
+  object-fit: cover;
 }
 
 .cookies-policy-link {
@@ -124,6 +157,29 @@
     padding: 60px 100px;
     gap: 24px;
   }
+  .section-cookies__blue-salute {
+    left: -21%;
+    top: 13%;
+    width: 838px;
+    height: 754px;
+  }
+  .section-cookies__red-salute {
+    left: 30%;
+    top: 71%;
+    width: 654px;
+    height: 654px;
+  }
+
+  .section-cookies__blue-salute-img {
+    width: 838px;
+    height: 754px;
+  }
+
+  .section-cookies__red-salute-img {
+    width: 654px;
+    height: 654px;
+  }
+
   .cookies-policy-btn-wrap {
     display: flex;
     justify-content: space-between;

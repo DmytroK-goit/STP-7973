@@ -1,9 +1,14 @@
 .section-reviews {
   scroll-margin-top: 100px;
-  padding: 8px 20px 38px 20px;
+  padding: 8px 20px 6px 20px;
   width: 320px;
   position: relative;
-  overflow: visible;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.section-reviews__red-salute {
+  display: none;
 }
 
 .section-reviews__title {
@@ -46,8 +51,8 @@
   stroke-width: 5px;
   stroke: #1c1c1c;
   position: absolute;
-  top: -12%;
-  left: -3%;
+  top: 5%;
+  left: 2%;
   overflow: visible;
 }
 
@@ -120,6 +125,15 @@
   .section-reviews {
     width: 1200px;
     padding: 40px 100px 100px 100px;
+  }
+  .section-reviews__red-salute {
+    width: 887px;
+    height: 887px;
+    display: block;
+    object-fit: cover;
+    position: absolute;
+    left: 56.5%;
+    top: 33%;
   }
   .section-reviews__mobile {
     display: none !important;
