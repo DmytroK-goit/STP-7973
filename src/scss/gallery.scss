@@ -127,6 +127,7 @@
   .section-gallery {
     padding: 40px 100px 100px 100px;
     width: 1200px;
+    height: 1940px;
     background-image: image-set(
         url('/img/gallery/red-salute.png') 1x,
         url('/img/gallery/red-salute-2x.png') 2x
@@ -200,6 +201,7 @@
       display: block;
     }
     &__link {
+      display: inline-flex;
       justify-content: center;
       margin-top: 170px;
       border-radius: 12px;
