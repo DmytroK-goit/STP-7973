@@ -165,7 +165,8 @@
   }
 
   .section-reviews__item {
-    width: 100%;
+    width: 486px !important;
+    height: 304px;
   }
   .section-reviews__name-wrap {
     padding-bottom: 20px;
@@ -192,5 +193,6 @@
   .section-reviews__item-text {
     font-size: 20px;
     padding: 20px 80px 34px 20px;
+    height: 204px;
   }
 }

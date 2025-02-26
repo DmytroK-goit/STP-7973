@@ -24,7 +24,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 12px;
-    padding: 20px 39px;
+    padding: 20px;
     width: 403px;
     height: 80px;
     background-color: #efefef;
@@ -33,7 +33,7 @@
     font-size: 20px;
     line-height: 1.5;
     gap: 24px;
-    margin-top: 200px;
+    margin-top: 150px;
     margin-left: 100px;
     transition: background-color 0.3s ease-in-out;
 
@@ -50,9 +50,9 @@
 .parag {
   display: block;
 
-  @include media(desktop) {
-    width: 110px;
-  }
+  // @include media(desktop) {
+
+  // }
 }
 .google-play img {
   width: 24px;
